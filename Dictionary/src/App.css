@@ -1,7 +1,62 @@
 #root {
-  max-width: 1280px;
+  max-width: 40rem;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
+.header__container{
+  background-color: rgb(79, 89, 228);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container__h2{
+  text-align: center;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  min-height: 20rem;
+}
+
+.main__section--over{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(110, 138, 128);
+  width: 35rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.main__section--over__input{
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+  
+}
+
+.main__section--over__btn{
+  width: 20.5rem;
+  height: 2rem;
+  border: 1px solid black;
+}
+.main__section--over__btn:hover{
+  background-color: black;
+  color: aliceblue;
+}
+
+.main__section--under{
+  background-color: rgb(157, 157, 212);
+  display: flex;
+  flex-direction: column;
+}

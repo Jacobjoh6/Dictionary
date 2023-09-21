@@ -25,19 +25,20 @@ function App() {
 
   return (
     <div>
-      <header>
-        <h2>Dictionary</h2>
+      <header className='header__container'>
+        <h2 className='header__container__h2'>Dictionary</h2>
       </header>
-      <main>
-        <section>
-          <input
+      <main className='main__container'>
+        <section className='main__section--over'>
+          <input 
             type="text"
+            className='main__section--over__input'
             placeholder="Search word"
             onChange={(event) => setWord(event.target.value)}
           />
-          <button onClick={handleSearch}>Search</button>
+          <button className='main__section--over__btn' onClick={handleSearch}>Search</button>
         </section>
-        <section>
+        <section className='main__section--under'>
           {error && <p>Error: {error}</p>}
           {data && (
             <div>
