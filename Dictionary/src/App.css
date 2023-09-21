@@ -4,10 +4,11 @@
   padding: 2rem;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
+  border: 1px solid black;
 }
 
 .header__container{
-  background-color: rgb(79, 89, 228);
+  background-color:#bccad6;
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -23,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: #8d9db6;
   min-height: 20rem;
 }
 
@@ -32,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(110, 138, 128);
+  background-color: #667292;
   width: 35rem;
   height: 10rem;
   margin: 1rem;
@@ -42,13 +43,15 @@
   width: 20rem;
   height: 2rem;
   text-align: center;
-  
+  border-radius: 2px;
+  margin: .3rem;
 }
 
 .main__section--over__btn{
   width: 20.5rem;
   height: 2rem;
   border: 1px solid black;
+  border-radius: 2px;
 }
 .main__section--over__btn:hover{
   background-color: black;
@@ -56,7 +59,11 @@
 }
 
 .main__section--under{
-  background-color: rgb(157, 157, 212);
+  background-color: #f1e3dd;
   display: flex;
   flex-direction: column;
+}
+
+.main__section--under, .ul{
+  border-style: none;
 }

@@ -64,7 +64,7 @@ function App() {
                       <div key={index}>
                         <p>Part of Speech: {meaning.partOfSpeech}</p>
                         <p>Synonyms: {meaning.synonyms && meaning.synonyms.join(', ')}</p>
-                        <p>Definitions:</p>
+                        <h3>Definitions:</h3>
                         <ul>
                           {meaning.definitions.map((definition, index) => (
                             <li key={index}>
