@@ -41,16 +41,16 @@ function App() {
         <section className='main__section--under'>
           {error && <p>Error: {error}</p>}
           {data && (
-            <div>
+            <div className='list__container'>
               {data.map((entry, index) => (
                 <div key={index}>
-                  <h3>Word: {entry.word}</h3>
+                  <h2>Word: {entry.word}</h2>
                   <p>Phonetic: {entry.phonetic}</p>
-                  <h4>Origin: {entry.origin}</h4>
-                  <ul>
+                  <h2>Origin: {entry.origin}</h2>
+                  <ul className='list__container--audio'>
                     {entry.phonetics.map((phonetic, index) => (
                       <li key={index}>
-                        Text: {phonetic.text}
+                        <h4>Text: {phonetic.text}</h4>
                         {phonetic.audio && (
                           <audio controls>
                             <source src={phonetic.audio} type="audio/mpeg" />
@@ -59,20 +59,19 @@ function App() {
                       </li>
                     ))}
                   </ul>
-                  <ul>
+                  <ul className='list__container--meaning'>
                     {data[0].meanings.map((meaning, index) => (
                       <div key={index}>
-                        <p>Part of Speech: {meaning.partOfSpeech}</p>
-                        <p>Synonyms: {meaning.synonyms && meaning.synonyms.join(', ')}</p>
+                        <h3>Part of Speech: {meaning.partOfSpeech}</h3>
+                        <h4>Synonyms: {meaning.synonyms && meaning.synonyms.join(', ')}</h4>
                         <h3>Definitions:</h3>
-                        <ul>
+                        <ul className='list__container--definition'>
                           {meaning.definitions.map((definition, index) => (
                             <li key={index}>
                               {definition.definition}
                               {definition.example && (
                                 <p>Example: {definition.example}</p>
-                              )}
-                            </li>
+                              )}</li>
                           ))}
                         </ul>
                       </div>

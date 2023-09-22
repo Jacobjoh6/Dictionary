@@ -26,7 +26,7 @@
   justify-content: center;
   background-color: #8d9db6;
   min-height: 20rem;
-}
+} 
 
 .main__section--over{
   display: flex;
@@ -62,8 +62,29 @@
   background-color: #f1e3dd;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.main__section--under, .ul{
-  border-style: none;
+
+.list__container--audio{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
 }
+
+.list__container--meaning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: lower-roman;
+  padding: .5rem;
+  margin-left: -1rem;
+}
+
+.list__container--definition{
+
+}
+
