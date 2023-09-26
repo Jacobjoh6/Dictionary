@@ -1,0 +1,91 @@
+#root {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+  }
+  
+  .header__container{
+    background-color:#bccad6;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__container__h2{
+    text-align: center;
+  }
+  
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8d9db6;
+    min-height: 20rem;
+  } 
+  
+  .main__section--over{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #667292;
+    width: 35rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+  
+  .main__section--over__input{
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 2px;
+    margin: .3rem;
+  }
+  
+  .main__section--over__btn{
+    width: 20.5rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+  .main__section--over__btn:hover{
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  .main__section--under{
+    background-color: #f1e3dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .list__container--audio{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list__container--meaning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: lower-roman;
+    padding: .5rem;
+    margin-left: -1rem;
+  }
+  
+  .list__container--definition{
+  
+  }
+  
+  
