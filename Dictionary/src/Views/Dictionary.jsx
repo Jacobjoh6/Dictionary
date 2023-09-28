@@ -7,9 +7,9 @@ function Dictionary() {
     const [data, setData] = useState(null)
     const [error, setError] = useState(null)
   
+    //API call and checks if user spelled correctly or if input is empty
     async function handleSearch() {
       try {
-  
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
         if (!response.ok) {
           throw new Error(error)
@@ -24,6 +24,7 @@ function Dictionary() {
       }
     }
 
+    //displays info gathered from API
     return(
         <div>
         <header className='header__container'>
