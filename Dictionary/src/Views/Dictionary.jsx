@@ -12,14 +12,14 @@ function Dictionary() {
   
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
         if (!response.ok) {
-          throw new Error('Something went wrong')
+          throw new Error(error)
         }
         const jsonData = await response.json()
         console.log(jsonData);
         setData(jsonData)
-        setError(null)
+        setError('Something went wrong')
       } catch (err) {
-        setError(err.message)
+        setError('Something went wrong')
         setData(null)
       }
     }
@@ -34,7 +34,7 @@ function Dictionary() {
             <input 
               type="text"
               className='main__section--over__input'
-              placeholder="Search word"
+              placeholder="Search"
               onChange={(event) => setWord(event.target.value)}
             />
             <button className='main__section--over__btn' onClick={handleSearch}>Search</button>
